@@ -9,7 +9,7 @@ Properties pro;
 	
 	public  configDataProvider() throws Exception {
 		
-		String path = "C:\\Users\\admin\\eclipse-workspace\\mavenFramwork\\config\\config.Properties";
+		String path = "C:\\Users\\admin\\eclipse-workspace\\shivrajFramework\\Config\\config.Properties";
 		
 		FileInputStream fis = new FileInputStream(path);
 		

@@ -23,8 +23,8 @@ public class Test_001 extends BaseClass{
 	
 	
 	//actions
-	Library.custom_SendKeys(login.gettxt_email(),xl.getStringData("Sheet1",0,0));
-	Library.custom_SendKeys(login.getpass(), xl.getStringData("Sheet1", 0, 1));
+	Library.custom_SendKeys(login.gettxt_email(),xl.getStringData("Sheet1",0,0),"Email");
+	Library.custom_SendKeys(login.getpass(), xl.getStringData("Sheet1", 0, 1), "password");
 	
 	}
 

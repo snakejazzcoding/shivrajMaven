@@ -2,15 +2,20 @@ package com.Utility;
 
 import org.openqa.selenium.WebElement;
 
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+
 public class Library {
-	
-public static void custom_SendKeys(WebElement element, String text) {
+	public static ExtentTest test;
+public static void custom_SendKeys(WebElement element, String text, String fieldname) {
 		
 		try {
 			element.sendKeys(text);
+			test.log(Status.PASS, fieldname+ "=Value successfully send="+ text);
 		}
 		catch (Exception e){
-			System.out.println(e.getMessage());
+			test.log(Status.FAIL, e.getMessage());
+			
 		}
 		
 		
